@@ -1,0 +1,39 @@
+body{
+    margin: 4%; 
+    margin-top: 0;
+}
+li{
+    list-style: none;
+}
+
+.body{
+    margin: 10%;
+    margin-top: 5%;
+}
+
+.content-info{
+    background-color: rgb(221, 219, 219);
+    padding: 4%;
+    padding-left: 3%;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-box-shadow: 20px 11px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 20px 11px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 20px 11px 5px 0px rgba(0,0,0,0.75);
+}
+
+.titulo{
+    background-color: crimson;
+    color: white;
+    padding: 2%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+     border-radius: 15px;
+}
+
+.text-bold{
+    font-weight: 900;
+}

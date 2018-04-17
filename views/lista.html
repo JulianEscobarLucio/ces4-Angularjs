@@ -1,0 +1,19 @@
+<div ng-controller="listaController as vm">
+   <h1 class="titulo" ng-bind="vm.titulo | uppercase "></h1>
+   <br/>
+   <div class="body">
+        <label><span class="text-bold">Filtrar:</span> <input ng-model="vm.filtro" class="input-group"></label>
+        <br/>
+        <br/>
+        <div class="row">
+                  <div ng-repeat="mascota in vm.listaMAscota|orderBy:'nombre'|filter :vm.filtro" class="content-info col-3">   
+                        <li><span class="text-bold">Nombre :</span> {{mascota.nombre}}</li>
+                        <li><span class="text-bold">Tipo :</span> {{mascota.tipo}}</li>
+                        <li><span class="text-bold">Valor :</span> {{mascota.valor|currency }}</li>
+                        <br/>
+                        <button ng-click="vm.verDetalle(mascota.id)" class="btn btn-info">Ver detalle</button>
+                 </div>    
+             </div>
+        </div>
+   </div>
+</div>
